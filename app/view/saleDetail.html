@@ -1,0 +1,18 @@
+<table class="sale-table table bordered">
+    <thead>
+    <tr>
+        <th>商品名称</th>
+        <th>昨日销售额</th>
+        <th>昨日销售件数</th>
+        <th>明细</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="data in showData">
+        <td>{{data.name}}</td>
+        <td>{{data.yesterdaySale}}</td>
+        <td>{{data.yesterdayNum}}</td>
+        <td><a goods-name="{{data.name}}" href="#/goodsDetail">显示明细</a></td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei', 'SimHei', 'WenQuanYi Micro Hei', 'Hiragino Sans GB', sans-serif;
+  overflow: visible;
+}
+ul,
+ol,
+input,
+textarea {
+  boder: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+/* 常用 */
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.hide {
+  display: none;
+}
+.pr {
+  position: relative;
+}
+.chartRight {
+  width: 90%;
+}
+.chartFull {
+  width: 100%;
+}
+.leftHide {
+  left: -10%;
+}
+.leftShow {
+  left: 0;
+}
+.metro .navigation-bar {
+  z-index: 20;
+  position: fixed;
+}
+.metro .navigation-bar .element {
+  cursor: pointer;
+}
+.metro .navigation-bar .element > a {
+  color: #fff;
+}
+.metro .navigation-bar .element.disabled {
+  color: #999999;
+  cursor: default;
+}
+.metro .navigation-bar .element.disabled:hover {
+  background-color: #1ba1e2;
+}
+.metro .navigation-bar .select-type {
+  width: 175px;
+  text-align: center;
+}
+.metro .navigation-bar .select-type.element {
+  padding: 0;
+}
+.metro .navigation-bar .select-type .dropdown-toggle {
+  line-height: 45px;
+  height: 45px;
+  display: block;
+}
+.metro .navigation-bar .select-type .dropdown-toggle:after {
+  content: '';
+}
+.metro .navigation-bar .select-type i {
+  font-size: 12px !IMPORTANT;
+}
+.metro .navigation-bar .select-type ul {
+  min-width: 175px;
+}
+.metro .navigation-bar .select-type li {
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #DCDDDE;
+}
+.metro .navigation-bar .select-type li:last-child {
+  border-bottom: none;
+}
+.view {
+  width: 1000px;
+  padding-top: 245px;
+  margin: 0 auto;
+}
+.view .liveness-block {
+  height: 200px;
+  width: 500px;
+  float: left;
+}
+.view .liveness-block h2 {
+  text-align: center;
+}
+.view .liveness-block span {
+  text-align: center;
+  display: inline-block;
+}
+.view .liveness-block .num {
+  font-size: 30px;
+  color: #0066ff;
+  text-align: right;
+  width: 60%;
+}
+.view .liveness-block .percent {
+  color: #00ff33;
+  width: 30%;
+}
+.view .sale-table {
+  width: 100%;
+}
+.view .sale-table tbody td {
+  text-align: center;
+}

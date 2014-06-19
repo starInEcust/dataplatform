@@ -1,0 +1,93 @@
+@import "base";
+@import "functionLib";
+@import "var";
+@import "ngClass";
+//@import "animate";
+.metro{
+	.navigation-bar{
+		z-index: 20;
+		position: fixed;
+		.element{
+			cursor: pointer;
+			>a{
+				color: #fff;
+			}
+			&.disabled{
+				color: rgb(153, 153, 153);
+				cursor: default;
+				&:hover{
+					background-color: #1ba1e2;
+				}
+			}
+		}
+		.select-type{
+			width: 175px;
+			text-align: center;
+			&.element{
+				padding: 0;
+			}
+			.dropdown-toggle{
+				line-height: 45px;
+				height: 45px;
+				display: block;
+				&:after{
+					content: '';
+				}
+			}
+
+			i{
+				font-size: 12px !IMPORTANT;
+			}
+			ul{
+				min-width: 175px;
+			}
+			li{
+				cursor: pointer;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				border-bottom: 1px solid #DCDDDE;
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+.view{
+	width: 1000px;
+	padding-top: 245px;
+	margin: 0 auto;
+	.liveness-block{
+//		margin-top: 200px;
+		height: 200px;
+		width: 500px;
+		float: left;
+		h2{
+			text-align: center;
+		}
+		span{
+			text-align: center;
+			display: inline-block;
+		}
+		.num{
+			font-size: 30px;
+			color: @my-bule;
+			text-align: right;
+			width: 60%;
+		}
+		.percent{
+			color: @font-green;
+			width: 30%;
+		}
+
+	}
+	.sale-table{
+		width: 100%;
+		tbody{
+			td{
+				text-align: center;
+			}
+		}
+	}
+}
