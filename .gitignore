@@ -214,14 +214,14 @@ pip-log.txt
 #Mr Developer fx
 .mr.developer.cfg
 .idea/
-nodejs/app/.idea/
-nodejs/app/data/
-nodejs/app/data
-nodejs/node_modules/
-nodejs/app/js/*.BACKUP.*.js
-nodejs/app/js/*.LOCAL.*.js
-nodejs/app/js/*.REMOTE.*.js
-nodejs/app/js/*.orig
-nodejs/app/js/*.BASE.*.js
-nodejs/app/js/*.REMOTE.*.js
-nodejs/app/css/neeya-main.css
+app/.idea/
+/app/data/
+app/data
+node_modules/
+app/js/*.BACKUP.*.js
+app/js/*.LOCAL.*.js
+app/js/*.REMOTE.*.js
+app/js/*.orig
+app/js/*.BASE.*.js
+app/js/*.REMOTE.*.js
+app/css/neeya-main.css
