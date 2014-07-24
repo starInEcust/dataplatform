@@ -8,10 +8,10 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="data in showData">
+    <tr ng-repeat="data in showData | orderBy: f : rev">
         <td>{{data.date}}</td>
         <td>{{data.saleroom}}</td>
-        <td>{{data.saleroom}}</td>
+        <td>{{data.salenum}}</td>
     </tr>
     </tbody>
 </table>

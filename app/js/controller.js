@@ -6,7 +6,6 @@ var livenessControl = ['$scope', '$rootScope','$http' ,function livenessControl(
 	$http({method: 'GET', url: '/liveness'}).
 		success(function(data, status, headers, config) {
 			$scope.mydata = data;
-			console.log(data);
 
 		}).
 		error(function(data, status, headers, config) {

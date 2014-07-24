@@ -14,7 +14,7 @@ var fs = require('fs');
 var app = express();
 // all environments
 app.set('port', process.env.PORT || 8099);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'app'));
 app.engine('.html',ejs.__express);
 app.set('view engine', 'html');
 app.use(express.logger('dev'));
@@ -28,11 +28,21 @@ app.use(express.static(path.join(__dirname, 'app')));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
-
-
 app.get('/', function(req,res){
-    res.sendfile('app/index.html');
+	res.sendfile('app/appindex.html');
 });
+
+//app.post('/vali', function(req,res){
+//	var id = req.body.ID;
+//	var password = req.body.password;
+//	if(id == 'susan.li' && password == 'tp9678'){
+//		res.render('appindex.html',function(err,html){
+//			res.writeHead(200, {'Content-Type': 'text/html'});
+//			res.end(html);
+//
+//		});
+//	}
+//});
 app.get('/users', user.list);
 app.get('/liveness',getdata.getlivenessdata);
 app.get('/shopSale',getdata.getshopSaledata);
